@@ -13,6 +13,6 @@ spec:
       containers:
       - name: httpie
         image: alpine:latest
-        command: ["sleep", "10"]
+        command: ["false"]
       restartPolicy: Never
   backoffLimit: 1
