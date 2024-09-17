@@ -10,3 +10,4 @@ configmap:
 image:
   name: devopsjourney1/mywebapp
   tag: latest
+  token: 'This would be the token'

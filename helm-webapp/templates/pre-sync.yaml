@@ -13,6 +13,6 @@ spec:
       containers:
       - name: httpie
         image: alpine:latest
-        command: ["false"]
+        command: ["echo", "{{ .Values.token }}"]
       restartPolicy: Never
   backoffLimit: 1
