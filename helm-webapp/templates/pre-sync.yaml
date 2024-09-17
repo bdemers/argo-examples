@@ -13,6 +13,6 @@ spec:
       containers:
       - name: alpine
         image: alpine:latest
-        command: ["echo", "token: {{ .Values.configmap.data.token }}"]
+        command: ["false"]
       restartPolicy: Never
   backoffLimit: 1
