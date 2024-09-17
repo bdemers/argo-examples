@@ -11,8 +11,8 @@ spec:
   template:
     spec:
       containers:
-      - name: httpie
+      - name: alpine
         image: alpine:latest
-        command: ["echo", "{{ .Values.token }}"]
+        command: ["echo", "token: {{ .Values.token }}"]
       restartPolicy: Never
   backoffLimit: 1
