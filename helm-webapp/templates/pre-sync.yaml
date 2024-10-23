@@ -13,6 +13,6 @@ spec:
       containers:
       - name: alpine
         image: alpine:latest
-        command: ["false"]
+        command: ["true"]
       restartPolicy: Never
   backoffLimit: 1
