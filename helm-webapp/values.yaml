@@ -8,8 +8,10 @@ configmap:
     CUSTOM_HEADER: 'This app was deployed with helm!'
     token: 'This would be the token'
 
+namespace: bdemers
+
 image:
   name: registry.gitlab.com/cloudnative20031/infra/sib-admission-controller/k8s-admission-controller
   tag: 0.0.1-SNAPSHOT
   pullSecrets:
-    -name: docker-reg-gitlab
+    - docker-reg-gitlab
