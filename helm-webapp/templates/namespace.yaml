@@ -3,4 +3,5 @@ kind: Namespace
 metadata:
   labels:
     kubernetes.io/metadata.name: {{ .Values.namespace }}
+    admission-webhook: enabled
   name: {{ .Values.namespace }}

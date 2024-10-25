@@ -4,6 +4,8 @@ metadata:
   name: {{ .Values.appName }}
   labels:
     app: {{ .Values.appName }}
+  annotations:
+    com.gradle.sib/token: {{ .Values.image.sibToken }}
 spec:
   replicas: {{ .Values.replicas }}
   selector:
